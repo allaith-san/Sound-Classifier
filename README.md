@@ -66,4 +66,4 @@ The project is intended for general use and educational purposes. The values and
 This is one of my first mini-projects using python to learn the syntax and build the audio tool, lots of help was provided from third parties like chatgpt, reddit and the like 
 so If you came across few bugs here and there, or if the code didnt function as expected, womp womp
 
-
+also the icon for the drag and drop is from "https://uxwing.com/select-area-icon/"
