@@ -4,7 +4,7 @@
 
 The Sound Classifier application is a tool for analyzing audio files to determine if they have a melodic quality. Using the `tkinter` library for the GUI and `librosa` for audio processing, this script provides a user-friendly interface for drag-and-drop audio analysis. Users can adjust various parameters through sliders to influence the analysis results.
 
-![Application Screenshot](assets/screenshot.png)
+![Application Screenshot](assets/Screenshot.png)
 
 ## Features
 
@@ -28,9 +28,6 @@ The Sound Classifier application is a tool for analyzing audio files to determin
     ```
     Note: `tkinter` is usually included with Python installations. If not, you may need to install it separately.
 
-3. **Add Assets:**
-    Place your `drag_drop_icon.png` file in an `icons` directory inside the project folder. This image is used in the drag-and-drop area of the GUI.
-
 ## Usage
 
 1. **Run the Script:**
@@ -51,15 +48,22 @@ The Sound Classifier application is a tool for analyzing audio files to determin
 4. **View Results:**
     The result will be displayed as "Melodic Sound ✅" or "Non-melodic Sound ❌", with additional debug information shown below.
 
-## Parameters Explained
+## Debug Information Explained
 
-- **Max Note Shifts**: The number of times the pitch of the sound must change to be considered melodic.
-- **Pitch Threshold (Hz)**: The minimum amplitude of the pitch required to be considered a valid note.
-- **Min Note Duration (s)**: The shortest duration a note must be present to be included in the analysis.
-- **Harmony Threshold**: The minimum ratio of harmonic changes to total note changes for the sound to be classified as melodic.
+When analyzing an audio file, the debug information provides detailed insights into the analysis process:
+
+- **Number of Valid Note Shifts**: The count of times the pitch changes significantly in the audio. This indicates the variation in pitch, which contributes to the melodic nature of the sound.
+- **Number of Harmonic Changes**: The count of note changes that align with common harmonic intervals (e.g., perfect fourths, fifths). A higher count suggests a more harmonious sound.
+- **Harmonic Ratio**: The ratio of harmonic changes to total note changes. This value helps determine if the pitch changes are musically harmonious. A higher ratio indicates a greater proportion of harmonic changes, which is typical of melodic sounds.
 
 ## Troubleshooting
 
 - **No Sound Playback**: Ensure your system's default audio player is properly configured. Check the console for error messages.
 - **Performance Issues**: Large audio files may take longer to process. Ensure your system meets the recommended specifications.
+
+## Warning
+The project is intended for general use and educational purposes. The values and metrics provided are subjective and not meant for professional use.
+This is one of my first mini-projects using python to learn the syntax and build the audio tool, lots of help was provided from third parties like chatgpt, reddit and the like 
+so If you came across few bugs here and there, or if the code didnt function as expected, womp womp
+
 
